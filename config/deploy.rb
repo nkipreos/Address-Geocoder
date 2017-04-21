@@ -18,7 +18,7 @@ set :rbenv_ruby, '2.3.1'
 set :rbenv_path, '/home/ubuntu/.rbenv'
 
 # Puma settings
-set :puma_conf, "#{shared_path}/config/puma.rb"o
+set :puma_conf, "#{shared_path}/config/puma.rb"
 set :puma_workers, 2
 set :puma_threads, [16, 24]
 
