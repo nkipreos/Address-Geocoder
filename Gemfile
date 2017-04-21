@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0.rc1'
+gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -28,13 +28,21 @@ gem 'spring',        group: :development
 
 gem 'spreadsheet'
 
-gem 'json'
+gem 'json', '~> 1.8'
 
 gem 'digest'
 
 gem 'geocoder'
 
 gem 'bootstrap-sass'
+
+gem 'puma', '~> 3.7'
+
+group :development do
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-rbenv', '~> 2.0'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -43,8 +51,8 @@ gem 'bootstrap-sass'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
+
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
