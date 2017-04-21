@@ -18,7 +18,7 @@ set :rbenv_ruby, '2.3.1'
 set :rbenv_path, '/home/ubuntu/.rbenv'
 
 # Puma settings
-set :puma_conf, "#{shared_path}/config/puma.rb"
+set :puma_conf, "#{shared_path}/config/puma.rb"o
 set :puma_workers, 2
 set :puma_threads, [16, 24]
 
@@ -30,7 +30,7 @@ set :puma_threads, [16, 24]
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/puma.rb'
+append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/puma.rb', 'config/services_config.yml'
 
 # Default value for linked_dirs is []
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
