@@ -2,13 +2,13 @@
 lock '3.8.1'
 
 set :application, 'Address-Geocoder'
-set :repo_url, 'git@github.com:nkipreos/Address-Geocoder.git'
+set :repo_url, 'https://github.com/nkipreos/Address-Geocoder.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/apps/Address-Geocoder'
+set :deploy_to, '/home/ubuntu/apps/Address-Geocoder'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -30,7 +30,7 @@ set :puma_threads, [16, 24]
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/puma.rb'
 
 # Default value for linked_dirs is []
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
