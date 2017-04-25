@@ -2,14 +2,16 @@
 	<div class="col-sm-8 col-sm-offset-2" style="margin-top:20px">
 		<div class="jumbotron">
 			<h1>Sistema de Georeferenciación de Direcciones</h1>
-			<p>Se debe subir un archivo con las direcciones en la primera columna, separadas en cada una de las líneas. El archivo de 
+			<p>Se debe subir un archivo con las direcciones en la primera columna, separadas en cada una de las líneas. El archivo de
 			salida será un xls con las direcciones en la primera columna, las latitudes en la segunda y las longitudes en la tercera.</p>
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<%= form_tag '/upload', multipart: true do %>
-					  <label for="file">Buscar Archivos</label><%= file_field_tag "file" %>
+					<%= form_tag upload_path, multipart: true do %>
+						<%= label_tag 'file', 'Buscar Archivos' %>
+						<%= file_field_tag 'file' %>
+
 					  <br />
-					  <%= submit_tag "Subir Archivo", class: "btn btn-primary" %>
+					  <%= submit_tag 'Subir Archivo', class: 'btn btn-primary' %>
 					<% end %>
 				</div>
 			</div>
