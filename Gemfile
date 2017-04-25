@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'roo', '~> 2.7.0'
+gem 'roo-xls', '~> 1'
 
 gem 'json', '~> 1.8'
 

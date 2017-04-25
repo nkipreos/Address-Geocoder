@@ -2,7 +2,10 @@
 class NormalizerController < ApplicationController
   # POST /upload
   def upload
-    xlsx = Roo::Spreadsheet.open(normalizer_params[:file].path, extension: :xlsx)
+    file = normalizer_params[:file]
+    file_ext = file.original_filename.split('.').last
+
+    xlsx = Roo::Spreadsheet.open(file.path, extension: file_ext)
 
     addresses = []
 
