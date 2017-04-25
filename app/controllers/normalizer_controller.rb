@@ -27,7 +27,7 @@ class NormalizerController < ApplicationController
     rows_results = []
 
     # We will use a maximum of addresses/rows
-    addresses = addresses.first(500)
+    addresses = addresses.first(100)
 
     addresses.each do |address|
       # Geocoder could fail if the google requests limit is exceeded
