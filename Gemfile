@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0'
+gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -30,6 +30,8 @@ gem 'roo', '~> 2.7.0'
 gem 'roo-xls', '~> 1'
 
 gem 'json', '~> 1.8'
+
+gem 'devise', '~> 4.2'
 
 gem 'digest'
 
